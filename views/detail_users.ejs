@@ -1,0 +1,33 @@
+<%- include('layout/header') %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 mx-auto mt-4">
+            <div class="card shadow">
+                <div class="card-header bg-success">
+                    <h3 class="text-light">View Details For (<%= user.title %>)</h3>
+                </div>
+
+                <!-- Display Display Form -->
+                <div class="card-body p-4">
+                        <div class="mb-3">
+                            <div>Title: <%= user.title %></div>
+                            <div>Description: <%= user.description %></div>
+                            <div>DatePublished: <%= user.datepublished %></div>
+                            <div>PageCount: <%= user.pagecount %></div>
+                            <div>Genre: <%= user.genre %></div>
+                            <div>bookId: <%= user.bookid %></div>
+                            <div>Publisher: <%= user.publisher %></div>
+                            <div>Image: <img src="/<%= user.image %>" width="100" class="img-thumbnail mt-1"></div>
+                        </div>
+                        <a href="/index"><button>Back</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('layout/footer') %>
+
+
+

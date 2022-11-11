@@ -1,0 +1,38 @@
+[
+   {
+      "AuthorName": "s",
+      "Email": "s@gmail.com",
+      "Password": "$2b$10$NuDbQlgjJ6bsfxWVHjqRzO5DkmkZlStLweiQKH2O2TpFxja5yV9Fq",
+      "PhoneNumber": "08084023682",
+      "id": 1,
+      "books": [
+         {
+            "Title": "",
+            "datePublished": "",
+            "Description": "",
+            "pageCount": 0,
+            "Genre": "",
+            "bookId": 0,
+            "Publisher": ""
+         }
+      ]
+   },
+   {
+      "AuthorName": "victor",
+      "Email": "v@gmail.com",
+      "Password": "$2b$10$T9m3JHxXXhG48k886cEBwezgFbTe1aTLxAHKTuF/3qbp3KxDgwQku",
+      "PhoneNumber": "09072665384",
+      "id": 2,
+      "books": [
+         {
+            "Title": "",
+            "datePublished": "",
+            "Description": "",
+            "pageCount": 0,
+            "Genre": "",
+            "bookId": 0,
+            "Publisher": ""
+         }
+      ]
+   }
+]

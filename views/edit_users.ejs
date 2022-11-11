@@ -1,0 +1,59 @@
+<%- include('layout/header') %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 mx-auto mt-4">
+            <div class="card shadow">
+                <div class="card-header bg-success">
+                    <h3 class="text-light">Edit User (<%= user.title %>)</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form action="/update/<%= user._id %>" method="post" id="add-form" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="name">Title</label>
+                            <input type="text" name="title"  class="form-control form-control-lg" placeholder="Enter name" value="<%= user.title %>" required /> 
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Select Image</label>
+                            <input class="form-control form-control-lg" type="file" name="image" /> 
+                            <img src="/<%= user.image %>" width="100" class="img-thumbnail mt-1">
+                        </div>
+                        <input type="hidden" name="old_image" value="<%= user.image %>" />
+                        <div class="mb-3">
+                            <label for="name">Description</label>
+                            <input type="text" name="description"  class="form-control form-control-lg" placeholder="Enter email" value="<%= user.description %>" required /> 
+                        </div>
+                        <div class="mb-3">
+                            <label for="name">DatePublished</label>
+                            <input type="text" name="datepublished"  class="form-control form-control-lg" placeholder="Enter phone" value="<%= user.datepublished %>" required /> 
+                        </div>
+                        <div class="mb-3">
+                            <label for="name">PageCount</label>
+                            <input type="text" name="pagecount"  class="form-control form-control-lg" placeholder="Enter phone" value="<%= user.pagecount %>" required /> 
+                        </div>
+                        <div class="mb-3">
+                            <label for="name">Genre</label>
+                            <input type="text" name="genre"  class="form-control form-control-lg" placeholder="Enter phone" value="<%= user.genre %>" required /> 
+                        </div>
+                        <div class="mb-3">
+                            <label for="name">bookId</label>
+                            <input type="text" name="bookid"  class="form-control form-control-lg" placeholder="Enter phone" value="<%= user.bookid %>" required /> 
+                        </div>
+                        <div class="mb-3">
+                            <label for="name">Publisher</label>
+                            <input type="text" name="publisher"  class="form-control form-control-lg" placeholder="Enter phone" value="<%= user.publisher %>" required /> 
+                        </div>
+                        <div class="mb-3 d-grid">
+                            <input type="submit" name="submit" value="Update User" class="btn btn-success btn-lg" /> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('layout/footer') %>
+
+
+

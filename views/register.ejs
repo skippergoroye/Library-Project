@@ -1,0 +1,45 @@
+<%- include('layout/header') %>
+
+<div class="text-center center-div" id="login">
+    <div class="container w-25 border border-dark py-5 my-5">
+        <div class="title pb-5">
+            <h2 class="font-weight-bold">Login System</h2>
+             <span>Log in for the existing user</span>
+             <% if(locals.logout){ %>
+                <div class="after alert-success text-center">
+                    <%= logout %> 
+                </div>
+                <% } %> 
+        </div>
+        <form action="/register" method="POST" class="pt-3">
+            <div class="form-group">
+                <input type="text" id="name" name="name" class="form-control" placeholder="AuthorName" required />
+                <small class="form-text text-muted text-left">Register authorname address</small>
+            </div>
+            <div>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required />
+                <small class="form-text text-muted text-left">Register email address</small>
+            </div>
+            <div>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required />
+                <small class="form-text text-muted text-left">Register password</small>
+            </div>
+            <div>
+                <input type="tel" id="password" name="phonenumber" class="form-control" placeholder="PhoneNumber" required />
+                <small class="form-text text-muted text-left">Register PhoneNumber</small>
+            </div>
+            <button type="submit" class="btn btn-success rounded-pill mb-1">Register</button>
+        </form>
+        <a href="/login"><button type="submit" class="btn btn-danger rounded-pill">Login Page</button></a>
+    </div>
+</div>
+
+
+<%- include('layout/footer.ejs') %>
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+<%- include('layout/header.ejs') %>
+
+<div class="text-center center-div" id="login">
+    <div class="container w-25 border border-dark py-5 my-5">
+        <div class="title pb-5">
+            <h2 class="font-weight-bold">Login System</h2>
+             <span>Log in for the existing user</span>
+             <% if(locals.logout){ %>
+                <div class="after alert-success text-center">
+                    <%= logout %> 
+                </div>
+                <% } %> 
+        </div>
+        <form action="/login" method="POST" class="pt-3">
+            <div class="form-group">
+               <!-- <label for="email">Email</label> -->
+               <input type="email" id="email" class="form-control" placeholder="Email" name="email" required />
+               <small class="form-text text-muted text-left">Register email address</small>
+           </div>
+           <div class="form-group">
+               <!-- <label for="password">Password</label> -->
+               <input type="password" id="password" class="form-control" placeholder="Password" name="password" required />
+               <small class="form-text text-muted text-left">Register password</small>
+           </div>
+           <button type="submit" class="btn btn-success rounded-pill mb-1">Login</button>
+       </form>
+        <a href="/register"><button type="submit" class="btn btn-danger rounded-pill">Register Page</button></a>
+    </div>
+</div>
+
+
+<%- include('layout/footer.ejs') %>
+    
+
