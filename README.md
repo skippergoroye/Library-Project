@@ -1,7 +1,7 @@
 # week-6-task-SQ012-Node-pod-D
 # EXPRESS 
 
-https://myprojectgoroye.herokuapp.com/
+https://myprojectweek6.herokuapp.com/
 
 ### Setup
 1. Use and setup the project with `yarn`.
